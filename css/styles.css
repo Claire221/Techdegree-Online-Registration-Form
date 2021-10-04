@@ -1,0 +1,349 @@
+/* ===============
+Global Styles
+=============== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+}
+
+#input:focus{
+    background-color: rgb(197, 197, 197);
+    outline: 3px solid #006630;
+    box-shadow: 5px 5px 10px rgb(168, 168, 168);
+    transition: outline .25s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #006630;
+    background-color: #fff;
+    border: solid 3px #006630;
+    box-shadow: none;
+    transform: translateY(7px);
+    transition: background-color .25s ease-in-out;
+}
+
+/* ===================
+Header Styles
+=================== */
+
+header {    
+    width: 100%;
+    padding: 8% 0;
+    text-align: center;
+    background: linear-gradient(-180deg, #01361a, #117741);
+    box-shadow: 5px 5px 10px rgb(134, 134, 134);
+}
+
+
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: 5px 5px 10px rgb(46, 46, 46);
+}
+
+/* ===================
+Tile section Styles
+=================== */
+
+
+.titles {
+    margin: 10% 0 5%;
+    text-align: center;
+}
+
+.titles p {
+    padding: 3% 0;
+}
+
+.hr-1,
+.hr-2 {
+    border: 0;
+    border-top: 4px solid #000;
+    margin: 1% auto;
+    width: 90%;
+}
+
+.hr-2 {
+    border-top: 2px solid #000;
+}
+
+/* ===================
+Contact section Styles
+=================== */
+.contact {
+    width: 100%;
+}
+
+legend {
+    width: 92%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    font-size: 1.25rem;
+}
+
+.contact-info label {
+    margin: 2%;
+
+    width: 100%;
+}
+
+.contact-info input,
+.contact-info select,
+textarea {
+    padding: 4%;
+    border-radius: 5px;
+    background-color: rgb(236, 236, 236);
+    border: none;
+    text-align: right;
+}
+
+.zipcode {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info:last-child  input:last-child{
+    width: 50%;
+}
+/* ===================
+  Newsletter Styles
+=================== */
+
+.newsletter {
+    width: 90%;
+}
+
+.newsletter legend {
+    margin-top: 5%;
+}
+
+.newsletter p {
+    width: 93%;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+
+.form-options{
+    width: 93%;
+    margin: 4% auto;
+}
+
+.newsletter-format {
+    margin: 5% auto;
+    display: flex; 
+    flex-direction: column;
+}
+textarea {
+    margin: auto;
+}
+textarea,
+.btn {
+    width: 90%;
+    display: block;
+}
+
+.btn {
+    font-size: 1.2rem;
+    margin: 5% auto;
+    color: #fff;
+    background-color: #006630;
+    border-radius: 10px;
+    border: none;
+    padding: 5%;
+    box-shadow: 5px 5px 10px rgb(168, 168, 168);
+}
+
+@media only screen and (min-width: 768px) {
+ 
+    legend {
+        font-size: 1.5rem;
+    }
+    
+    /* ===================
+    Header Styles
+    =================== */
+    header {
+        padding: 3% 0;
+
+    }
+
+    /* ===================
+    Tile section Styles
+    =================== */
+    .titles {
+        width: 90%;
+        margin-top: 5%;
+    }
+
+    /* ===================
+    Contact section Styles
+    =================== */
+    .contact,
+    .newsletter {
+        max-width: 90%;
+    }
+
+    .contact legend,
+    .newsletter legend {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .contact-info {
+        flex-direction: row;
+        width: 90%;
+    }
+
+    .contact-info label {
+        width: 25%;
+        margin: auto;
+    }
+
+    .contact-info input,
+    .contact-info select,
+    textarea {
+        padding: 2%;
+        width: 75%; 
+    }
+
+    
+    .zipcode {
+        flex-direction: row;
+    }
+
+    .zipcode label {
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+        margin-right: 5%;
+    }
+
+    .contact-info:last-child  input:last-child{
+        width: 50%;
+
+    }
+
+    .contact-info:last-child  label{
+        width: 20%;
+        text-align: left;
+
+    }
+
+    .contact-info:last-child  input:last-child{
+        width: 25%;
+       
+    }
+
+    /* ===================
+    Newsletter Styles
+    =================== */
+    .hr-2 {
+        width: 90%;
+    }
+
+    .html-newsletter {
+        width: 100%;
+    }
+
+    .newsletter p,
+    .newsletter legend {
+        margin: 1%;
+        padding: 1% 0;
+    }
+
+    .form-options{
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 1%;
+    }
+
+    .form-options input {
+        margin: 1%;
+    }
+
+    textarea,
+    .btn {
+        width: 100%;
+
+    }
+
+    .btn {
+        padding: 2%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    form {
+        width: 60%;
+    }
+
+    /* ===================
+    Header Styles
+    =================== */
+    header {
+        padding: 2%;
+
+    }
+
+    .hr-2 {
+        width: 90%
+    }
+    
+    /* ===================
+    Contact section Styles
+    =================== */
+    .contact,
+    .newsletter {
+        min-width: 100%;    
+    }
+
+    /* ===================
+    Tile section Styles
+    =================== */
+    .titles {
+        width: 100%;
+    }
+
+    .newsletter {
+        width: 90%;
+    }
+}
