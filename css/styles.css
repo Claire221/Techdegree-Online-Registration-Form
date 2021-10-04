@@ -132,6 +132,13 @@ textarea {
     text-align: right;
 }
 
+.contact option,
+.contact option:first-of-type{
+    text-align: left;
+    color: rgb(104, 103, 103);
+    background-color: rgb(236, 236, 236);
+}
+
 .zipcode {
     display: flex;
     flex-direction: column;
