@@ -34,7 +34,7 @@ fieldset {
     border: none;
 }
 
-#input:focus{
+.input:focus{
     background-color: rgb(197, 197, 197);
     outline: 3px solid #006630;
     box-shadow: 5px 5px 10px rgb(168, 168, 168);
