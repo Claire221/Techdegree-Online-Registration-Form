@@ -95,6 +95,7 @@ Tile section Styles
     border-top: 4px solid #000;
     margin: 1% auto;
     width: 90%;
+    padding: 0;
 }
 
 .hr-2 {
@@ -205,11 +206,7 @@ textarea,
 
     .hr-1,
     .hr-2 {
-        width: 100%
-    }
-
-    .hr-2 {
-        margin-bottom: 0;
+        width: 100%;
     }
 
     header {
@@ -223,6 +220,7 @@ textarea,
     .titles {
         width: 90%;
         margin-top: 5%;
+        margin-bottom: 0;
     }
 
     /* ===================
@@ -289,6 +287,7 @@ textarea,
     =================== */
     .hr-2 {
         width: 90%;
+        
     }
 
     #newsletter {
@@ -335,25 +334,25 @@ textarea,
 @media only screen and (min-width: 1024px) {
 
     form {
-        width: 60%;
+        width: 70%;
     }
 
-        /* ===================
-        Tile section Styles
-        =================== */
-        .titles {
-            width: 100%;
-        }
+    /* ===================
+    Tile section Styles
+    =================== */
+    .titles {
+        width: 100%;
+    }
+
     /* ===================
     Header Styles
     =================== */
     header {
         padding: 2%;
-
     }
 
     .hr-2 {
-        width: 90%
+        width: 90%;
     }
     
     /* ===================
@@ -361,7 +360,7 @@ textarea,
     =================== */
     #contact
     #newsletter {
-        min-width: 100%;    
+        width: 100%;    
     }
 
 
