@@ -27,32 +27,32 @@
         </div>
 
         <fieldset>
-            <div class="contact">
-                <legend>Contact Infromation</legend>
+             <legend class="section-title">Contact Infromation</legend>
+             <div id="contact">
                 <div class="contact-info">
                     <label for="first_name">Full Name</label>
-                    <input type="text" name="first_name" id="" class="input" placeholder="Required" required > 
+                    <input type="text" name="first_name" id="first_name" class="input" placeholder="Required" required > 
                 </div>
-            <div class="contact-info">
-                <label for="email">Email Address</label>
-                <input type="email" name="email" id="" class="input" placeholder="Required" required> 
-            </div>
+                <div class="contact-info">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" class="input" placeholder="Required" required> 
+                </div>
                 <div class="contact-info">
                     <label for="phone_num">Phone Number</label>
-                    <input type="tel" name="phone_num" id="" class="input" required>
+                    <input type="tel" name="phone_num" id="phone_num" class="input" required>
                 </div>
                 <div class="contact-info">
                     <label for="street_address">Street Address</label>
-                    <input type="text" name="street_address" id="" class="input" required>
+                    <input type="text" name="street_address" id="street_address" class="input" required>
                 </div>
                 <div class="contact-info">
                 <label for="city">City</label>
-                    <input type="text" name="city" id="" class="input" required> 
+                    <input type="text" name="city" id="city" class="input" required> 
                 </div>
                 <div class="contact-info">
                     <label for="state">State</label>
-                    <select name="state" id="" class="input" required>
-                        <option value="choose">Choose State</option>
+                    <select name="state" id="state" class="input" required>
+                        <option value="" >Choose State</option>
                         <option value="alabama">Alabama</option>
                         <option value="california">California</option>
                         <option value="missouri">Missouri</option>
@@ -60,9 +60,9 @@
                         <option value="tennessee">Tennessee</option>
                     </select>
                 </div>
-                <div class="contact-info zipcode" class="input" required>
+                <div class="contact-info zipcode input" >
                     <label for="zip_code">Zip Code</label>
-                    <input type="text" name="zip_code" id="">  
+                    <input type="text" name="zip_code" id="zip_code" required>  
                 </div>
             </div>
         </fieldset>
@@ -71,20 +71,20 @@
         <hr class="hr-2">
 
         <fieldset>
-            <div class="newsletter">
-                <legend>Newsletter</legend>
+            <legend class="section-title">Newsletter</legend>
+            <div id="newsletter">
                 <p>Select the newsletters you would like to receive</p>
                 <div class="html-newsletter">
                     <div class="form-options">
-                        <input type="checkbox" id="" class="input" name="newsletter_options" value="html_news">
+                        <input type="checkbox" id="html_news" class="input" name="newsletter_options" value="html_news">
                         <label for="html_news">HTML News</label>
                     </div>
                     <div class="form-options">
-                        <input type="checkbox" id="" class="input" name="newsletter_options" value="css_news"> 
+                        <input type="checkbox" id="css_news" class="input" name="newsletter_options" value="css_news"> 
                         <label for="css_news">CSS News</label>
                     </div>
                     <div class="form-options">
-                        <input type="checkbox" id="" class="input" name="newsletter_options" value="javascrip_news">
+                        <input type="checkbox" id="javascrip_news" class="input" name="newsletter_options" value="javascrip_news">
                         <label for="javascrip_news">JavaScript News</label>
                     </div>
                 </div>
@@ -92,17 +92,17 @@
                 <div class="newsletter-format">
                     <p>HTML format</p>
                     <div class="form-options">
-                        <input type="radio" id="" class="input" name="newsletter_format" value="html">
-                        <label for="html">HTML</label>
+                        <input type="radio" id="html_newsletter" class="input" name="newsletter_format" value="html">
+                        <label for="html_newsletter">HTML</label>
                     </div>
                     
                     <div class="form-options">
-                        <input type="radio" id="" class="input" name="newsletter_format" value="plain_text">
-                        <label for="plain_text">Plain Text</label> 
+                        <input type="radio" id="text_newsletter" class="input" name="newsletter_format" value="plain_text">
+                        <label for="text_newsletter">Plain Text</label> 
                     </div>
                     <div class="topics">
                         <p>Other topics you would like to hear about</p>
-                        <textarea name="topics" id="" class="input" cols="50" rows="10"></textarea>
+                        <textarea name="topics" id="textArea" class="input" cols="50" rows="10"></textarea>
                         <button class="btn" type="submit">Sign Up</button>
                     </div> 
                 </div>

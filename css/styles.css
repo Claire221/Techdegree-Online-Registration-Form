@@ -34,6 +34,13 @@ fieldset {
     border: none;
 }
 
+.section-title {
+    width: 92%;
+    margin: 4% auto;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
 .input:focus{
     background-color: rgb(197, 197, 197);
     outline: 3px solid #006630;
@@ -73,8 +80,6 @@ h1 {
 /* ===================
 Tile section Styles
 =================== */
-
-
 .titles {
     margin: 10% 0 5%;
     text-align: center;
@@ -94,19 +99,14 @@ Tile section Styles
 
 .hr-2 {
     border-top: 2px solid #000;
+    margin-bottom: 5%;
 }
 
 /* ===================
 Contact section Styles
 =================== */
-.contact {
+#contact {
     width: 100%;
-}
-
-legend {
-    width: 92%;
-    margin: 0 auto;
-    padding: 0;
 }
 
 .contact-info {
@@ -132,8 +132,8 @@ textarea {
     text-align: right;
 }
 
-.contact option,
-.contact option:first-of-type{
+.contact-info option,
+.contact-info option:first-of-type{
     text-align: left;
     color: rgb(104, 103, 103);
     background-color: rgb(236, 236, 236);
@@ -151,15 +151,12 @@ textarea {
   Newsletter Styles
 =================== */
 
-.newsletter {
-    width: 90%;
+#newsletter {
+    width: 100%;
 }
 
-.newsletter legend {
-    margin-top: 5%;
-}
 
-.newsletter p {
+#newsletter p {
     width: 93%;
     font-size: 1.25rem;
     margin: 0 auto;
@@ -205,6 +202,16 @@ textarea,
     /* ===================
     Header Styles
     =================== */
+
+    .hr-1,
+    .hr-2 {
+        width: 100%
+    }
+
+    .hr-2 {
+        margin-bottom: 0;
+    }
+
     header {
         padding: 3% 0;
 
@@ -221,17 +228,16 @@ textarea,
     /* ===================
     Contact section Styles
     =================== */
-    .contact,
-    .newsletter {
-        max-width: 90%;
+    #contact {
+        max-width: 100%;
     }
 
-    .contact legend,
-    .newsletter legend {
-        max-width: 90%;
-        margin: 0 auto;
+    legend.section-title {
+        width: 93%;
         padding: 0;
+        margin: 0 auto;
     }
+
 
     .contact-info {
         flex-direction: row;
@@ -285,12 +291,17 @@ textarea,
         width: 90%;
     }
 
+    #newsletter {
+        width: 95%;
+        margin: 0;
+        padding: 0;
+    }
+
     .html-newsletter {
         width: 100%;
     }
 
-    .newsletter p,
-    .newsletter legend {
+    #newsletter p {
         margin: 1%;
         padding: 1% 0;
     }
@@ -300,6 +311,10 @@ textarea,
         align-items: center;
         padding: 0;
         margin: 1%;
+    }
+
+    .topics p {
+        padding: 50% 0;
     }
 
     .form-options input {
@@ -323,6 +338,12 @@ textarea,
         width: 60%;
     }
 
+        /* ===================
+        Tile section Styles
+        =================== */
+        .titles {
+            width: 100%;
+        }
     /* ===================
     Header Styles
     =================== */
@@ -338,19 +359,19 @@ textarea,
     /* ===================
     Contact section Styles
     =================== */
-    .contact,
-    .newsletter {
+    #contact
+    #newsletter {
         min-width: 100%;    
     }
 
+
     /* ===================
-    Tile section Styles
+    newsletter section Styles
     =================== */
-    .titles {
-        width: 100%;
+
+    #newsletter > p,
+    .topics {
+        margin-top: 3%;
     }
 
-    .newsletter {
-        width: 90%;
-    }
 }
