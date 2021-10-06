@@ -164,6 +164,10 @@ textarea {
     padding: 5% 0;
 }
 
+.topics {
+    margin-top: 5%;
+}
+
 .form-options{
     width: 93%;
     margin: 4% auto;
@@ -176,7 +180,10 @@ textarea {
 }
 textarea {
     margin: auto;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
 }
+
 textarea,
 .btn {
     width: 90%;
@@ -371,6 +378,10 @@ textarea,
     #newsletter > p,
     .topics {
         margin-top: 3%;
+    }
+
+    textarea {
+        margin-top: 2%;
     }
 
 }
